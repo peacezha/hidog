@@ -1,0 +1,33 @@
+{
+  "server": {
+    "port": 3001,
+    "host": "localhost"
+  },
+  "database": {
+    "name": "hidog_dev",
+    "ssl": false
+  },
+  "logging": {
+    "level": "debug",
+    "console": true,
+    "file": "logs/hidog-dev.log"
+  },
+  "cache": {
+    "type": "memory"
+  },
+  "security": {
+    "jwt": {
+      "secret": "dev-secret-key",
+      "expiresIn": "7d"
+    },
+    "rateLimit": {
+      "windowMs": 300000,
+      "max": 1000
+    }
+  },
+  "development": {
+    "hotReload": true,
+    "showStackTrace": true,
+    "verboseErrors": true
+  }
+}

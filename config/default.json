@@ -1,0 +1,47 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0",
+    "cors": {
+      "enabled": true,
+      "origins": ["*"]
+    }
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "hidog",
+    "user": "hidog_user",
+    "ssl": false,
+    "pool": {
+      "min": 2,
+      "max": 10
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/hidog.log",
+    "console": true,
+    "rotation": {
+      "enabled": true,
+      "maxFiles": 5,
+      "maxSize": "10MB"
+    }
+  },
+  "cache": {
+    "type": "redis",
+    "host": "localhost",
+    "port": 6379,
+    "ttl": 3600
+  },
+  "security": {
+    "jwt": {
+      "secret": "your-secret-key-here",
+      "expiresIn": "24h"
+    },
+    "rateLimit": {
+      "windowMs": 900000,
+      "max": 100
+    }
+  }
+}
