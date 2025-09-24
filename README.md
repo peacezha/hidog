@@ -32,22 +32,26 @@ git clone https://github.com/peacezha/hidog.git
 cd hidog
 ```
 
-2. 安装依赖：
+2. 自动设置环境：
 ```bash
-# 如果是 Node.js 项目
-npm install
-
-# 如果是 Python 项目
-pip install -r requirements.txt
+./scripts/setup.sh
 ```
 
-3. 运行项目：
+3. 运行示例：
 ```bash
-# 请根据实际项目替换以下命令
-npm start
-# 或
-python main.py
+# Hello World 示例
+node examples/hello-world.js
+
+# API 示例
+node examples/api-example.js
 ```
+
+### 📖 详细文档
+
+- **🚀 新手指南**: [快速开始文档](docs/quick-start.md) - 零基础入门教程
+- **📚 完整文档**: [项目文档](DOCS.md) - 深入了解项目架构  
+- **💡 代码示例**: [examples/](examples/) - 丰富的使用示例
+- **🤝 参与贡献**: [贡献指南](CONTRIBUTING.md) - 如何参与开发
 
 ## 使用方法
 
